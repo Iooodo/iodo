@@ -1,2 +1,2 @@
-print('hello world')
-print('hello')
+class Bar(object):
+    _slots_ = ()
