@@ -1,2 +1,4 @@
-print('hello world')
-print('hello')
+def foo():
+    foo()
+class Bar(object):
+    _slots_ = ()
