@@ -1,14 +1,11 @@
 # Пользователь вводит 3 числа, сказать сколько из них положительных
 # и сколько отрицательных
 
-numbers = [7, 8.0, -878]
-pos_count = 0
-neg_count = 0
-for num in numbers:
-    if num >= 0:
-        pos_count += 1
-    else:
-        neg_count += 1
-
-print("Positive numbers:", pos_count)
-print("Negative numbers:", neg_count)
+number_1 = int(input('Enter number_1: '))
+number_2 = int(input('Enter number_2: '))
+number_3 = int(input('Enter number_3: '))
+number_4 = 0
+compare = (bool(number_1 > number_4), bool(number_2 > number_4), bool(number_3 > number_4))
+compare_text = str(compare)
+print("Negative numbers:", compare_text.count("Fal"))
+print("Positive numbers:", compare_text.count("Tru"))
