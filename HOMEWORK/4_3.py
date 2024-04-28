@@ -8,6 +8,9 @@ numbers = [i for i in range(0, n+1)]
 dict_my = {k: {"name": input("Enter name: "), "email": input("Enter email: ")} for k in numbers}
 print(dict_my)
 
+
+
+
 n = int(input("n="))
 dict_my = {}
 for i in range(0, n+1):
