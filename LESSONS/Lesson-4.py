@@ -1,4 +1,4 @@
-list   - это класс
+# list   - это класс
 
 # tuple
 #a = (1, )
@@ -10,6 +10,7 @@ list   - это класс
 
 # ключом в словаре может быть любой хэшируемый объект!
 #data = {
+
 #    "name": "Alex",
  #   "surname": "Pavlov",
 #}
@@ -200,7 +201,7 @@ list   - это класс
 
 # a = set("HELLO WORLD")
 
-# from collections import *
+from collections import *
 
 
 # User = namedtuple("User", ("first_name", "last_name", "email"))
@@ -213,7 +214,7 @@ list   - это класс
 # q = deque([1, 2, 3, 4, 5, 6, 7])
 # q.rotate(-2)
 # print(q)
-
+#
 # data = defaultdict(list)
 # data["age"].extend([1, 2, 3, 4])
 # print(data)

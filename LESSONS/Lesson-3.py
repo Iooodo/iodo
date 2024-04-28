@@ -50,10 +50,10 @@
 # a = r"hello\n\n\n\nworld"
 # print(a)
 
-name = "Alex"
-email = "alex@gmail.com"
-age = 34
-is_human = True
+# name = "Alex"
+# email = "alex@gmail.com"
+# age = 34
+# is_human = True
 # text = "Hello %(first_name)s email=%(email_address)s" % {"first_name": name, "email_address": email}
 # text = "Hello {first_name} your email {email_address}".format(first_name=name, email_address=email)
 # text = f"Hello {name} your email {email}"
