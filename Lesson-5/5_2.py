@@ -6,17 +6,11 @@ number_1 = input("Введите число:")
 operation = input("Введите знак действия:")
 number_2 = input("Введите число:")
 
-if number_1.isdigit():
+try:
     number_1 = float(number_1)
-else:
-    print("Введено неверное число!")
-    exit()
-
-if number_2.isdigit():
     number_2 = float(number_2)
-else:
-    print("Введено неверное число!")
-    exit()
+except ValueError:
+    print(f"Введено неверное число")
 
 if operation in ("+", "-", "*", "/"):
     if operation == "+":
