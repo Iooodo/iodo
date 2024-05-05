@@ -213,3 +213,102 @@
 # def foo(a: list, *args: str, **kwargs: list) -> None:
 #     for i in a:  # type: int
 #         pass
+
+# def simple_func(name):
+#     return f'Hello {name}!'
+# result = simple_func('vasya')
+# print(result)
+
+# def simple_func(n):
+#     def nested_func():
+#         print('i am funk')
+#     for i in range(n):
+#         nested_func()
+# simple_func(4)
+
+# def multiply(x):
+#     def power(y):
+#         return x * y
+#     return power
+#
+# x_3 = multiply(4)
+# print(x_3(6))
+#
+# simple_func = lambda x, n: x**n
+# print(simple_func(2, 2))
+
+# numbers = ['1', '3', '4']
+# numbers = list(map(float, numbers))
+# print(numbers)
+
+# text = ['s', 't', '4', '77', 'd']
+# text = list(filter(lambda x: x.isdigit(), text))
+# print(text)
+
+# a = [3, 4, 6, 5]
+# b = 'podke'
+# c = (None, True, False)
+# res = list(zip(a, b, c))
+# print(res)
+
+# def simple_func(a, b = None):
+#     print(a, b)
+# simple_func(4, b = 5)
+
+# def simple_func(*args):
+#     print(args)
+# simple_func(4, 5, 6, 3, 'p')
+
+# def simple_func(**kwargs):
+#     print(kwargs)
+# simple_func(a=4, b=5, c=6, d=3, e='p')
+
+# def simple_func(n):
+#     for i in range(n):
+#         yield i
+# a = simple_func(4)
+# print('kow')
+# print(next(a))
+# print('kow')
+# print(next(a))
+# print('kow')
+# print(next(a))
+
+# def decorator(func):
+#     def wrapper(*args, **kwargs):
+#         print('ihjdj')
+#         result = func(*args, **kwargs)
+#         print('after')
+#         return result
+#     return wrapper
+#
+# @decorator
+# def hello(name):
+#     print(f"Hello, {name}")
+#
+# hello('Kate')
+
+# import time
+#
+# def delay(seconds=1):
+#     def decorator(func):
+#         def wrapper(*args, **kwargs):
+#             print('before')
+#             time.sleep(seconds)
+#             result = func(*args, **kwargs)
+#             print('after')
+#             return result
+#         return wrapper
+#     return decorator
+#
+# @delay(4)
+# def hello(name):
+#     print (f'Hello, {name}')
+# hello("Kat")
+
+def factorial_recursive(n):
+    if n == 1:
+        return n
+    else:
+        return n*factorial_recursive(n-1)
+print(factorial_recursive(4))
