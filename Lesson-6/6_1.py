@@ -2,11 +2,11 @@
 # использования функции int
 
 def bin_func(a):
-    b2 = format(a, '#b')
-    return b2
+    b_num = format(a, '#b')
+    return b_num
 
-c = int(input('Enter number:'))
-z = bin_func(c)
-decimal_number = eval(z)
-print(z, decimal_number)
+n = int(input('Enter number:'))
+b_number = bin_func(n)
+d_number = eval(b_number)
+print(b_number, d_number)
 
