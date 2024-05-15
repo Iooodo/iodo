@@ -9,12 +9,7 @@
 # об автомобиле
 
 class Car:
-    color: str
-    count_passenger_seats: int
-    is_baby_seat: bool
-    is_busy: bool
-
-    def __init__(self, color, count_passenger_seats, is_baby_seat):
+    def __init__(self, color: str, count_passenger_seats: int, is_baby_seat: bool):
         self.color = color
         self.count_passenger_seats = count_passenger_seats
         self.is_baby_seat = is_baby_seat
