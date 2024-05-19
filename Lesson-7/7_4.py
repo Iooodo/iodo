@@ -46,11 +46,11 @@ class Category:
     @classmethod
     def make_published(cls, ind_cat: int):
         if ind_cat in range(len(cls.categories)):
-            b = cls.categories[ind_cat]
-            for k, v in b.items():
+            category = cls.categories[ind_cat]
+            for k, v in category.items():
                 if k == 'is_published':
                     is_published = True
-                    b[k] = is_published
+                    category[k] = is_published
         else:
             raise IndexError
 
@@ -59,11 +59,11 @@ class Category:
     @classmethod
     def make_unpublished(cls, ind_cat: int):
         if ind_cat in range(len(cls.categories)):
-            b = cls.categories[ind_cat]
-            for k, v in b.items():
+            category = cls.categories[ind_cat]
+            for k, v in category.items():
                 if k == 'is_published':
                     is_published = False
-                    b[k] = is_published
+                    category[k] = is_published
         else:
             raise IndexError
 
