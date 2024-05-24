@@ -17,4 +17,6 @@ for line in file_inf[1:]:
     dict_list.append(dict_from_csv)
 print(dict_list)
 
+file.close()
+
 
