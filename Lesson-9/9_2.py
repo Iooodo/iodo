@@ -3,20 +3,27 @@
 # (названия колонок) без использования встроенной библиотеки CSV
 
 
-file = open('file.csv', 'r')
+class MakeDictList:
 
-file_lines = file.readlines()
-file_lines = [line[:-1] for line in file_lines]
-file_inf = [line.split(',') for line in file_lines]
+    def __init__(self, name_file: str):
+        self.file = open(name_file, 'r')
+        self.file_lines = self.file.readlines()
+        self.file_lines = [line[:-1] for line in self.file_lines]
+        self.file_inf = [line.split(',') for line in self.file_lines]
 
-dict_list = []
-for line in file_inf[1:]:
-    dict_from_csv = {}
-    for i, v in enumerate(line):
-        dict_from_csv[file_inf[0][i]] = v
-    dict_list.append(dict_from_csv)
-print(dict_list)
+    def make_dictlst(self):
+        dict_list = []
+        for line in self.file_inf[1:]:
+            dict_from_csv = {}
+            for i, v in enumerate(line):
+                dict_from_csv[self.file_inf[0][i]] = v
+            dict_list.append(dict_from_csv)
+        print(dict_list)
+        self.file.close()
 
-file.close()
+a = MakeDictList('file.csv')
+a.make_dictlst()
+
+
 
 
