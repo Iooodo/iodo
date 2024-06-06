@@ -17,16 +17,16 @@ from datetime import *
 # print(d)
 
 #  d = datetime.utsnow()            # НЕ ИСПОЛЬЗОВАТЬ - ОН DEPRECATED
-# print(d)
-
+# # print(d)
+#
 # d = datetime.now(tz=UTC)
 # print(d)
 # print(d.timestamp())
 # print(d.fromtimestamp(1717245807.845073, tz=UTC))
-
-
+#
+#
 # print(__name__)
-
+#
 # from pydantic import BaseModel, EmailStr
 # from pydantic_extra_types.
 #
