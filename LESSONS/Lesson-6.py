@@ -12,13 +12,9 @@
 # # # # #     for j in range(i, i + step * line_count - 1, step):
 # # # # #         if j <= stop:
 # # # # #             print(j, end=" ")
-# # # # #         else:
-# # # # #             break
-# # # # #     print()
-# # # #
-# # # #
-# # # # def foo():
-# # # #     print("FOO")
+#         else:
+#             break
+# .print().
 # # # #     print("FOO")
 # # # #     print("FOO")
 # # # #     print("FOO")
